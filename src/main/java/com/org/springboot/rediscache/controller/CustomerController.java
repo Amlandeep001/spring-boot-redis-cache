@@ -12,16 +12,16 @@ import com.org.springboot.rediscache.service.CustomerService;
 
 @RestController
 @RequestMapping("/customers")
-public class CustomerController {
-	
+public class CustomerController
+{
+
 	@Resource
-    CustomerService customerService;
-	
+	CustomerService customerService;
+
 	@GetMapping("customer/{id}")
-	public Customer getCustomer(@PathVariable String id) {
+	public Customer getCustomer(@PathVariable String id)
+	{
 		return customerService.getCustomerById(id);
 	}
-     
-     
-	
+
 }

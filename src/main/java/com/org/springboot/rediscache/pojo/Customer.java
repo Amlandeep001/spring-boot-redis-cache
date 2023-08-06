@@ -12,10 +12,10 @@ import lombok.experimental.FieldDefaults;
 @AllArgsConstructor
 @NoArgsConstructor
 @FieldDefaults(level = AccessLevel.PRIVATE)
-public class Customer implements Serializable{
-	
+public class Customer implements Serializable
+{
 	private static final long serialVersionUID = -7995072393607203898L;
-	
+
 	String name;
 	String email;
 	String id;

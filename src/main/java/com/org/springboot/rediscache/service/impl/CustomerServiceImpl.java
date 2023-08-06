@@ -12,13 +12,14 @@ import lombok.extern.slf4j.Slf4j;
 @Service
 @Slf4j
 @CacheConfig(cacheNames = {"Customer"})
-public class CustomerServiceImpl implements CustomerService {
+public class CustomerServiceImpl implements CustomerService
+{
 
 	@Override
 	@Cacheable(key = "#id")
-	public Customer getCustomerById(String id) {
+	public Customer getCustomerById(String id)
+	{
 		log.info("Getting customer information for id {}", id);
 		return new Customer("User" + id, "contsct-us@jvadevjournal", id);
-
 	}
 }
