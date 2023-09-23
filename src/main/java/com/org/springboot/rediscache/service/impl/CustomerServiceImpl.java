@@ -14,7 +14,6 @@ import lombok.extern.slf4j.Slf4j;
 @CacheConfig(cacheNames = {"Customer"})
 public class CustomerServiceImpl implements CustomerService
 {
-
 	@Override
 	@Cacheable(key = "#id")
 	public Customer getCustomerById(String id)
