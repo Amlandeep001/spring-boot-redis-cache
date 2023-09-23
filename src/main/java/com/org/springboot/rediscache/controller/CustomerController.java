@@ -14,7 +14,6 @@ import com.org.springboot.rediscache.service.CustomerService;
 @RequestMapping("/customers")
 public class CustomerController
 {
-
 	@Resource
 	CustomerService customerService;
 
@@ -23,5 +22,4 @@ public class CustomerController
 	{
 		return customerService.getCustomerById(id);
 	}
-
 }

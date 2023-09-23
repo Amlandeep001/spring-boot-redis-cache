@@ -4,7 +4,5 @@ import com.org.springboot.rediscache.pojo.Customer;
 
 public interface CustomerService
 {
-
 	Customer getCustomerById(String id);
-
 }
