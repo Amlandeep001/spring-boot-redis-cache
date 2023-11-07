@@ -19,6 +19,6 @@ public class CustomerServiceImpl implements CustomerService
 	public Customer getCustomerById(String id)
 	{
 		log.info("Getting customer information for id {}", id);
-		return new Customer("User" + id, "contsct-us@jvadevjournal", id);
+		return new Customer("User" + id, "contact-us@jvadevjournal", id);
 	}
 }
