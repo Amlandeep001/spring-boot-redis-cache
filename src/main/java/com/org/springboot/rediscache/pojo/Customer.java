@@ -19,5 +19,4 @@ public class Customer implements Serializable
 	String name;
 	String email;
 	String id;
-
 }
